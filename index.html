@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expandable Box Design - Assignment</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">YAY! It's BOGO</div>
+
+      <template id="option-template">
+        <div class="option-row">
+          <select class="size">
+            <option value="">Size</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <select class="color">
+            <option value="">Color</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Blue">Blue</option>
+          </select>
+        </div>
+      </template>
+
+      <div class="box" data-units="1">
+        <div class="box-header">
+          <label>
+            <input type="radio" name="units" /> 1 Unit
+            <span class="discount">10% Off</span>
+          </label>
+          <span>$10.00 USD</span>
+        </div>
+        <div class="options"></div>
+      </div>
+
+      <div class="box" data-units="2" style="position: relative">
+        <span class="most-popular">MOST POPULAR</span>
+        <div class="box-header">
+          <label>
+            <input type="radio" name="units" checked /> 2 Units
+            <span class="discount">20% Off</span>
+          </label>
+          <span>$18.00 USD</span>
+        </div>
+        <div class="options"></div>
+      </div>
+
+      <div class="box" data-units="3">
+        <div class="box-header">
+          <label>
+            <input type="radio" name="units" /> 3 Units
+            <span class="discount">30% Off</span>
+          </label>
+          <span>$24.00 USD</span>
+        </div>
+        <div class="options"></div>
+      </div>
+
+      <div class="footer">
+        <div class="delivery-info">
+          <span>Free Delivery</span>
+          <span>Total: $18.00 USD</span>
+        </div>
+        <button class="add-to-cart">+ Add to Cart</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
